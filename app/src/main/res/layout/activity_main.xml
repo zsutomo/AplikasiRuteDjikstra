@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/ampera">
+
+    <RelativeLayout
+        android:id="@+id/tempatbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/btn_pencarian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#0000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="5"
+            android:text="@string/btn_pencarian"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:onClick="klikTombolMenu" />
+
+        <Button
+            android:id="@+id/btn_Bantuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_pencarian"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#0000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="5"
+            android:text="@string/btn_bantuan"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:onClick="klikTombolMenu"/>
+
+        <Button
+            android:id="@+id/btn_About"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_Bantuan"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#0000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="5"
+            android:text="@string/btn_about"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:onClick="klikTombolMenu"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MENU"
+            android:textSize="35dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/textView"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
