@@ -1,6 +1,8 @@
 package com.tugasakhir.bima.aplikasirutedjikstra;
 
 import android.content.Intent;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,18 +15,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        onClickBtn_Pencarian();
+        Fragment fragment = new Menu();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.add(R.id.container,fragment);
+        ft.commit();
     }
 
-    private void onClickBtn_Pencarian() {
-        Button button = (Button) findViewById(R.id.btn_pencarian);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, PencarianActivity.class);
-                startActivity(intent);
-
-            }
-        });
-    }
 }

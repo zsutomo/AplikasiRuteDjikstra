@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -33,6 +34,7 @@ public class PencarianActivity extends AppCompatActivity implements OnMapReadyCa
                 .findFragmentById(R.id.maps);
         mapFragment.getMapAsync(this);
 
+
         EditText editTextLokasi = (EditText) findViewById(R.id.edit_pencarian);
         Button btn_pecarian = (Button) findViewById(R.id.btn_Cari);
         
@@ -43,6 +45,13 @@ public class PencarianActivity extends AppCompatActivity implements OnMapReadyCa
             }
         });
 
+        ImageView imageView = (ImageView) findViewById(R.id.img_back_pencarian);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
     }
 
     @Override
