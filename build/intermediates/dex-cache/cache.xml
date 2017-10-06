@@ -12,20 +12,11 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/truenull/.android/build-cache/3d4ea8ba2eb84e991bff1bd834d40225212ca1a3/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.1"
-        sha1="41f47bbcd281fdb1e42e220220ab3bfa1da591e0">
-        <dex dex="/home/truenull/Documents/My Project/Android Studio/AplikasiRuteDjikstra/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2e6779d1380a577a60e2c27a8dd224dd70d6eb31/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/truenull/Documents/My Project/Android Studio/AplikasiRuteDjikstra/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="e84aeebde4fb72011c5aee0fd9b68302a613c397">
+        sha1="9afde4f8505587d1f1ed4498c9fec356c23340cc">
         <dex dex="/home/truenull/Documents/My Project/Android Studio/AplikasiRuteDjikstra/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4fa289ad51d34fa9a6c960b2539e8493c17fb863/classes.dex" />
     </item>
 
